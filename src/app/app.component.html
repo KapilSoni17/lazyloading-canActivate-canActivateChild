@@ -1,0 +1,39 @@
+<form>
+<h1>Lazy Loading</h1>
+<hr />
+<h3>Admin Links</h3>
+<hr />
+<ul>
+  <li>
+    <a routerLink="admin/login">Login</a>
+  </li>
+  <li>
+    <a routerLink="admin/list">List</a>
+  </li>
+</ul>
+<hr />
+
+<h3>user links</h3>
+<hr />
+<ul>
+  <li>
+    <a routerLink="user/login">Login</a>
+  </li>
+  <li>
+    <a routerLink="user/list">List</a>
+  </li>
+</ul>
+<hr />
+<button routerLink="newcomponent">Cheak canActivate guard here(1)</button><br />
+<hr />
+<button routerLink="product">Cheak canActivate guard here(2)</button>
+<hr />
+
+<button routerLink="admin1">This Is Admin</button>
+<button routerLink="admin1-manage">CHILD 1</button>
+<button routerLink="admin1-edit">CHILD 2</button>
+<button routerLink="admin1-delete">CHILD 3</button>
+</form>
+<div>
+<router-outlet></router-outlet>
+</div>
