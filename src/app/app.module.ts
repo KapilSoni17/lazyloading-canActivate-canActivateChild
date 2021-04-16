@@ -9,6 +9,11 @@ import { Admin1Component } from './admin1/admin1.component';
 import { Admin1EditComponent } from './admin1-edit/admin1-edit.component';
 import { Admin1DeleteComponent } from './admin1-delete/admin1-delete.component';
 import { Admin1ManageComponent } from './admin1-manage/admin1-manage.component';
+import { FormComponent } from './form/form.component';
+
+import { FormsModule , ReactiveFormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -18,11 +23,14 @@ import { Admin1ManageComponent } from './admin1-manage/admin1-manage.component';
     Admin1Component,
     Admin1EditComponent,
     Admin1DeleteComponent,
-    Admin1ManageComponent
+    Admin1ManageComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
